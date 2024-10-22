@@ -16,30 +16,13 @@
 - React Toastify
 - Json Server
 
-## Participantes do projeto
-
-- Aluno 01
-- Aluno 02
-- Aluno 03
-
-## Responsaveis pelo desenvolvimento:
-
-### Aluno 01
-
-- Criou o componente de rotas
-- Foi responsável pelo CSS
-
-### Aluno 02
-
-- Criou a página de login
-- Criou o Componente de cabeçalho
 
 ## Instruções de Instalação
 
 Clonar o projeto com o comando abaixo:
 
 ```sh
-git clone https://github.com/roofranklin/casa-de-eventos-react.git
+git clone https://github.com/jltdsjrdev/projeto-final-docker.git
 ```
 
 Entrar na pasta do projeto
