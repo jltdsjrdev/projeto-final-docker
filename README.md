@@ -64,8 +64,7 @@ docker ps
 Olhe o id do container
 
 ```sh
-CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                                       NAMES
-fb9d05203a74   casa-de-eventos-react         "docker-entrypoint.s…"   31 minutes ago   Up 31 minutes    0.0.0.0:5173->5173/tcp, :::5173->5173/tcp   nervous_jennings
+CONTAINER ID          IMAGE                     COMMAND                  CREATED          STATUS                          PORTS                  NAMES
 cd458ddd9f8a   sistema-casa-eventos:latest    "docker-entrypoint.s…"   5 hours ago      Up 42 minutes              0.0.0.0:5173->5173/tcp   magical_haibt
 ```
 
