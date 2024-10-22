@@ -28,7 +28,7 @@ git clone https://github.com/jltdsjrdev/projeto-final-docker.git
 Entrar na pasta do projeto
 
 ```sh
-cd casa-de-eventos-react
+cd sistema-casa-eventos
 ```
 
 Instalar as dependencias
@@ -42,13 +42,13 @@ npm install
 Digitar o comando para criar a imagem do docker baseado nos requisitos do Dockerfile
 
 ```sh
-docker buildx buld -t casa-de-eventos-react .
+docker buildx buld -t sistema-casa-eventos .
 ```
 Digitar o comando para rodar a imagem do docker em uma porta especifica
 
 
 ```sh
-docker run -d -p 5173:5173 casa-de-eventos-react
+docker run -d -p 5173:5173 sistema-casa-eventos
 ```
 
 ### Pronto! Seu projeto já estará rodando no endereço
