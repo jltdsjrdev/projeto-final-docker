@@ -65,7 +65,8 @@ Olhe o id do container
 
 ```sh
 CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                                       NAMES
-fb9d05203a74   casa-de-eventos-react   "docker-entrypoint.s…"   31 minutes ago   Up 31 minutes   0.0.0.0:5173->5173/tcp, :::5173->5173/tcp   nervous_jennings
+fb9d05203a74   casa-de-eventos-react         "docker-entrypoint.s…"   31 minutes ago   Up 31 minutes    0.0.0.0:5173->5173/tcp, :::5173->5173/tcp   nervous_jennings
+cd458ddd9f8a   sistema-casa-eventos:latest    "docker-entrypoint.s…"   5 hours ago      Up 42 minutes              0.0.0.0:5173->5173/tcp   magical_haibt
 ```
 
 Pare o container
@@ -94,19 +95,19 @@ Depois
 
 ```sh
 docker tag <tag do nome da imagem> <tag do usuario do docker hub>/<tag do nome da imagem>:<tag da versão>
-Exemplo: docker tag casa-de-eventos-react vapeprosper/casa-de-eventos-react:v.1
+Exemplo: docker tag casa-de-eventos jltdsjrdev/sistema-casa-eventos:tagname
 ```
 
 Publicar no Docker Hub
 
 ```sh
 docker push <tag do usuario do docker hub>/<tag do nome da imagem>:<tag da versão>
-docker push vapeprosper/casa-de-eventos-react:v.1
+docker push jltdsjrdev/sistema-casa-eventos:tagname
 ```
 
 ### Imagem no docker Hub
 
-https://hub.docker.com/r/vapeprosper/casa-de-eventos-react
+https://hub.docker.com/r/jltdsjrdev/sistema-casa-eventos
 
 ### Agradecimentos
 
