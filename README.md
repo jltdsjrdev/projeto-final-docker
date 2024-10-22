@@ -37,24 +37,77 @@ Instalar as dependencias
 npm install
 ```
 
-Instalar de maneira global o json-server (Caso você ainda não possua)
-
-```sh
-npm install -g json-server
-```
-
 ## Instruções para rodar o projeto
 
-Digitar o comando abaixo para rodar em desenvolvimento
+Digitar o comando para criar a imagem do docker baseado nos requisitos do Dockerfile
 
 ```sh
-npm run dev
+docker buildx buld -t casa-de-eventos-react .
 ```
+Digitar o comando para rodar a imagem do docker em uma porta especifica
 
-Digitar o comando abaixo para rodar o mock local
 
 ```sh
-json-server --watch eventos.json
+docker run -d -p 5173:5173 casa-de-eventos-react
 ```
 
-### _Pronto! Seu projeto já estará rodando no endereço http://localhost:5173_
+### Pronto! Seu projeto já estará rodando no endereço
+
+```sh
+http://localhost:5173
+```
+Caso haja necessidade de mudanças no código
+
+```sh
+docker ps
+```
+Olhe o id do container
+
+```sh
+CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                                       NAMES
+fb9d05203a74   casa-de-eventos-react   "docker-entrypoint.s…"   31 minutes ago   Up 31 minutes   0.0.0.0:5173->5173/tcp, :::5173->5173/tcp   nervous_jennings
+```
+
+Pare o container
+
+```sh
+docker stop <id do container>
+```
+
+Faça suas mudanças e rode novamente os comandos de "build e "run".
+
+### Para rodar e ver o json no backend
+
+```sh
+http://localhost:5173/events.json
+```
+
+![imagem projeto](https://github.com/user-attachments/assets/afa94a7c-acb7-42fe-a14f-897bb8d16e19)
+
+
+### Guardar imagem Docker no Docker Hub
+
+```sh
+docker login
+```
+Depois
+
+```sh
+docker tag <tag do nome da imagem> <tag do usuario do docker hub>/<tag do nome da imagem>:<tag da versão>
+Exemplo: docker tag casa-de-eventos-react vapeprosper/casa-de-eventos-react:v.1
+```
+
+Publicar no Docker Hub
+
+```sh
+docker push <tag do usuario do docker hub>/<tag do nome da imagem>:<tag da versão>
+docker push vapeprosper/casa-de-eventos-react:v.1
+```
+
+### Imagem no docker Hub
+
+https://hub.docker.com/r/vapeprosper/casa-de-eventos-react
+
+### Agradecimentos
+
+Codigos de React, Vite, Node e estruturação completa: https://github.com/roofranklin
