@@ -111,3 +111,18 @@ https://hub.docker.com/r/jltdsjrdev/sistema-casa-eventos
 ### Agradecimentos
 
 Codigos de React, Vite, Node e estruturação completa: https://github.com/roofranklin
+
+### Contribuintes
+
+Obrigado a todos que já contribuíram para este projeto!
+
+<!-- Instruções para adicionar fotos de contribuintes -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/jltdsjrdev"><img src="https://avatars.githubusercontent.com/u/113628571?v=4" width="100px;" alt="Contribuidor 1"/><br /><sub><b>Jorge Junior</b></sub></a></td>
+    
+  </tr>
+</table>
+
+
+
